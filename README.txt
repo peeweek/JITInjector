@@ -32,11 +32,12 @@ Example :
                                                         "*.jitscript",
                                                         "JITRuntimeTasks",
                                                         v_ReferencedAssemblies,
-                                                        new JITStartupParserProcessingFileHandler(MyCustomMethod)
+                                                        new JITStartupParserProcessingFileHandler(ProcessScriptFile)
                                                      );
 
 
 	// in class
+	// Custom Method based on : 
         string ProcessScriptFile(string p_FileName)
         {
             string v_out = "";
